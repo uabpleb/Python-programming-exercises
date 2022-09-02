@@ -1,0 +1,4 @@
+If you iterate over an iterable (eg: list) and modify it during a loop, it'll have unpredictable behavior (indexes will shift whenever a deletion occurs).
+To avoid, either use list comprehension (lambdas) or create a copy of the list:
+    for elem in list(my_list):
+        my_list.remove(elem)
